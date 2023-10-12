@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Register</title>
+
+    <style>
+        h1 {
+            margin-left: 15%;
+            color: rgb(8, 96, 122);
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            height: 30vh;
+        }
+
+        form {
+            margin-right: 850px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Free Registration</h1>
+    <div class="container">
+        <form action="" method="post">
+            <table>
+                <tr>
+                    <td>Nama : </td>
+                    <td><input type="text"></td>
+                </tr>
+
+                <tr>
+                    <td>Tgl Lahir : </td>
+                    <td><input type="date" name="tanggal" /></td>
+                </tr>
+
+                <tr>
+                    <td>Alamat : </td>
+                    <td><textarea name="biografi"></textarea></td>
+                </tr>
+
+                <tr>
+                    <td>Kota : </td>
+                    <td><input type="text"></td>
+                </tr>
+
+                <tr>
+                    <td>Pekerjaan : </td>
+                    <td><select>
+                            <option>Tani</option>
+                            <option>Guru</option>
+                            <option>PNS</option>
+                            <option>Karyawan</option>
+                        </select>
+                </tr>
+
+                <tr>
+                    <td>Jenis Kelamin : </td>
+                    <td>
+                        <input type="radio" name="jk"> Laki-laki
+                        <input type="radio" name="jk"> Perempuan
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        Hobby : <br>
+                        &nbsp;<br>
+                        &nbsp;<br>
+                        &nbsp;
+                    </td>
+                    <td><input type="checkbox"> Reading <br>
+                        <input type="checkbox"> Sport <br>
+                        <input type="checkbox"> Singing <br>
+                        <input type="checkbox"> Traveling
+                    </td>
+                </tr>
+
+                    <td>
+                        <input type="submit" value="Kirim">
+                        <input type="button" value="Cancle">
+                    </td>
+                </tr>
+
+
+            </table>
+        </form>
+    </div>
+</body>
+
+</html>
