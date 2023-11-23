@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Luas Trapesium</title>
+    <style>
+        h1 {
+            color: royalblue;
+            font-weight: bold;
+        }
+    </style>
+    <script>
+        function hitungLuas() {
+            // Mendapatkan nilai dari input yang dimasukkan pengguna
+            var garisAtas = parseFloat(document.getElementById('garis_atas').value);
+            var garisBawah = parseFloat(document.getElementById('garis_bawah').value);
+            var tinggi = parseFloat(document.getElementById('tinggi').value);
+
+            // Melakukan perhitungan luas trapesium
+            var luas = 0.5 * (garisAtas + garisBawah) * tinggi;
+
+            // Menampilkan hasil pada elemen dengan id 'hasil'
+            document.getElementById('hasil').innerHTML = "Luas trapesium dengan garis atas " + garisAtas + ", garis bawah " + garisBawah + ", dan tinggi " + tinggi + " adalah: " + luas +" cm";
+        }
+    </script>
+</head>
+<body>
+    <h1>Menghitung Luas Trapesium</h1>
+    <label for="garis_atas">Garis Atas:</label>
+    <input type="number" id="garis_atas"><br><br>
+    
+    <label for="garis_bawah">Garis Bawah:</label>
+    <input type="number" id="garis_bawah"><br><br>
+    
+    <label for="tinggi">Tinggi:</label>
+    <input type="number" id="tinggi"><br><br>
+    
+    <button onclick="hitungLuas()">Hitung Luas</button><br><br>
+    
+    <p id="hasil"></p>
+</body>
+</html>

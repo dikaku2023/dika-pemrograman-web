@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tugas P15</title>
+    <script src="script.js" defer></script>
+    <style>
+        h1{
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>JavaScript Alert, Prompt, Confirm dan Form</h1>
+    <button onclick="showAlert()">Show Alert</button>
+    <button onclick="showPrompt()">Show Prompt</button>
+    <button onclick="showConfirm()">Show Confirm</button>
+<br>
+<br>
+    <form id="myForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+        <input type="submit" value="Submit">
+    </form>
+  
+
+    <script>
+        // Alert dialog
+        function showAlert() {
+            alert('Ini adalah pesan alert!');
+        }
+
+        // Prompt dialog
+        function showPrompt() {
+            const name = prompt('Masukkan nama Anda:');
+            if (name !== null && name !== '') {
+                alert(`Halo, ${name}!`);
+            } else {
+                alert('Anda tidak memasukkan nama.');
+            }
+        }
+
+        // Confirm dialog
+        function showConfirm() {
+            const result = confirm('Apakah Anda yakin ingin melanjutkan?');
+            if (result) {
+                alert('Anda memilih untuk melanjutkan.');
+            } else {
+                alert('Anda memilih untuk membatalkan.');
+            }
+        }
+
+        // Form submission
+        const form = document.getElementById('myForm');
+        form.addEventListener('submit', function (event) {
+            event.preventDefault();
+
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+
+            alert(`Nama: ${name}\nEmail: ${email}`);
+        });
+    </script>
+</body>
+
+</html>
