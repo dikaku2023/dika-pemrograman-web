@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>kontak</title>
+    <title>Registrasi</title>
     <style>
         body {
             background-color: yellowgreen;
@@ -14,16 +14,12 @@
             color: blue;
         }
 
-        p {
-            font-size: 20px;
-        }
     </style>
 </head>
 
 <body>
-    <div align="center">
-        BIODATA
-        <table border="2" width="50%">
+    <h2>Silahkan Isi Biodata Anda Disini !!!</h2>
+    <!-- <table border="2" width="50%">
             <tr align="center">
                 <td>Nama</td>
                 <td>Alamat</td>
@@ -45,8 +41,35 @@
                 Jl. Jeruk Limo No.14B Pamulang-Tangerang Selatan <br>
                 Email : dika.projectku@gmail.com <br>
                 Website : www.dproject.com <br>
-            </p>
+            </p> -->
+
+    <table>
+        <tr>
+            <td>Nama</td>
+            <td>:</td>
+            <td><input id="nama" type="text"></td>
+        </tr>
+        <tr>
+            <td>Umur</td>
+            <td>:</td>
+            <td><input id="umur" type="text"></td>
+        </tr>
+        <tr>
+            <td>kelamin</td>
+            <td>:</td>
+            <td><input id="kelamin" type="text"></td>
+        </tr>
+        <tr>
+            <td>Alamat</td>
+            <td>:</td>
+            <td><input id="alamat" type="text"></td>
+        </tr>
+        <tr>
+            <td colspan="3"><button id="submit">Submit</button></td>
+        </tr>
+    </table>
 
 </body>
+<script src="regis.js"></script>
 
 </html>
